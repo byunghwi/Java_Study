@@ -2,7 +2,7 @@ package myobj;
 import java.util.HashMap;
 import java.util.Random;
 
-import myobj.fruit.Grape;
+//import myobj.fruit.Grape;
 import myobj.item.Sword;
 import myobj.vehicle.Vehicle;
 
