@@ -36,7 +36,7 @@ public class ConnectPractice {
 			ResultSet rs = pstmt.executeQuery();
 			int i = 1;
 			while (rs.next()) {
-				System.out.printf("%-8d\t%-8d\t%-13s\t%-13s\t%-13d\t%-13d\t%-13d\t%-13d\n",
+				System.out.printf("%-7d\t%-8d\t%-13s\t%-13s\t%-13d\t%-13d\t%-13d\t%-13d\n",
 																i++,
 																rs.getInt("employee_id"),
 																rs.getString("first_name"),

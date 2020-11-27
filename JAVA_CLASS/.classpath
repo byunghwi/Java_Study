@@ -8,5 +8,7 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/gpdld/Downloads/sqldeveloper-19.4.0.354.1759-x64/sqldeveloper/jdbc/lib/ojdbc8.jar"/>
 	<classpathentry kind="lib" path="C:/Users/gpdld/Downloads/orai18n.jar"/>
+	<classpathentry kind="lib" path="C:/Users/gpdld/Downloads/HikariCP-3.4.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/gpdld/Downloads/slf4j-api-1.7.30.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
