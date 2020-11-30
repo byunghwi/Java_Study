@@ -19,8 +19,11 @@ public class S01_Tutorial {
 
 		JFrame frame = new JFrame("새로운 창");
 		
-		KakaoButton button = new KakaoButton(KakaoBtnEnum.FOLDER);
-		button.setSize(100);
+		JButton button = new KakaoButton(KakaoBtnEnum.CAMERA, 100);
+		
+		// Jbutton에는 setSize(int, int) 밖에 없어서 JButton을 상속받은 자식 클래스에서 setSize(int) 를 추가하더라도 업캐스팅해서 사용하면 쓸 수 없게 된다.
+		//button.setSize(100);
+		
 		button.setLocation(150, 300);
 		frame.add(button);
 

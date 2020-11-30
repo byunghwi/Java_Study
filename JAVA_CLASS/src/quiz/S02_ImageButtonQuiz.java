@@ -25,6 +25,7 @@ public class S02_ImageButtonQuiz extends JFrame {
                 try {
                         BufferedImage source = ImageIO.read(
                                 new File("C:\\Users\\gpdld\\Downloads\\KakaoTalk_20201127_104534735.png")
+
                         );                        
                         
                         System.out.println("이미지 전체 너비: " + source.getWidth());

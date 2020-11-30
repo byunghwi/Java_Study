@@ -1,12 +1,9 @@
 package swing;
 
-import java.awt.Color;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
 
 import javax.imageio.ImageIO;
@@ -15,12 +12,6 @@ import javax.swing.JButton;
 
 public class KakaoButton extends JButton {
 	
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-
-
 	final static int image_cols = 6;
 	final static int image_rows = 2;
 
@@ -37,7 +28,7 @@ public class KakaoButton extends JButton {
 		
 		images = new HashMap<KakaoBtnEnum, Image>();
 		
-		try {
+		try { 
 			source = ImageIO.read(new File("C:\\Users\\gpdld\\Downloads\\KakaoTalk_20201127_104534735.png"));
 			
 			KakaoBtnEnum[] enums = KakaoBtnEnum.values();
@@ -61,9 +52,9 @@ public class KakaoButton extends JButton {
 	
 	//KakaoButton의 생성자가 실행되고 나면
 	//JButton 인스턴스를 포함하고 있는 KakaoButton 인스턴스가 생성된다.
-	public KakaoButton(KakaoBtnEnum type) {
+	public KakaoButton(KakaoBtnEnum type, int size) {
 		this.type = type;
-		setSize(100);
+		setSize(100, size);
 	}
 	
 	public void setSize(int size) {
